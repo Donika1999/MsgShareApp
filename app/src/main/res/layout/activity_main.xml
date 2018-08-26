@@ -35,7 +35,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="214dp"
-        android:text="Send Data to Next Activity" />
+        android:text="Send Message to Next Activity" />
 
     <Button
         android:id="@+id/btnShareToOtherApps"
@@ -53,5 +53,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="28dp"
-        android:text="Recyclre View Demo" />
+        android:text="Click here to know my hobbies" />
 </RelativeLayout>
