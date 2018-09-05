@@ -39,7 +39,7 @@ class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : R
         init {
             itemView.setOnClickListener {
                 currentHobby?.let {
-                    context.showToast("I love "+currentHobby!!.title +"!!. If you love "+currentHobby!!.title+" too, click on share.")
+                    context.showToast("Click on share icon to send your hobby.")
                 }
             }
 
