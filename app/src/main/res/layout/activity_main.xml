@@ -53,5 +53,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="28dp"
-        android:text="Click here to share your hobbies hobbies" />
+        android:text="Share your hobbies hobbies" />
 </RelativeLayout>
