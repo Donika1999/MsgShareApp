@@ -26,7 +26,7 @@
         android:layout_marginTop="172dp"
 
         android:ems="10"
-        android:hint="Enter your Message" />
+        android:hint="You were saying.." />
 
     <Button
         android:id="@+id/btnSendMsgToNextActivity"
@@ -34,8 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="214dp"
-        android:text="Send Message to Next Activity" />
+        android:layout_marginBottom="215dp"
+        android:text="Message on the move" />
 
     <Button
         android:id="@+id/btnShareToOtherApps"
@@ -43,8 +43,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="139dp"
-        android:text="Share to other Apps" />
+        android:layout_marginBottom="140dp"
+        android:text="Share it through other apps" />
 
     <Button
         android:id="@+id/btnRecyclerViewDemo"
@@ -52,6 +52,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="28dp"
-        android:text="Share your hobbies hobbies" />
+        android:layout_marginBottom="27dp"
+        android:text="Tell me tell me tell me something I don't know.." />
 </RelativeLayout>
