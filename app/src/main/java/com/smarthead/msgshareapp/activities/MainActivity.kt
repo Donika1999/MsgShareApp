@@ -15,13 +15,16 @@ class MainActivity : AppCompatActivity() {
         val TAG: String = MainActivity:: class.java.simpleName
     }
     override fun onCreate(savedInstanceState: Bundle?) {
+        //Concept of inheritance: Super method accesses Super class method onCreate.
+        //The onCreate method is a mandatory method included in Android Class libraries by default, 
+        //and implies the entry point into an application.
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         btnShowToast.setOnClickListener {
             //code
-            Log.i(TAG,"Button was Clicked.")
-            showToast("Button was Clicked.")
+            Log.i(TAG,"Instance recorded.")
+            showToast("Instance recorded.")
 
         }
         btnSendMsgToNextActivity.setOnClickListener {
@@ -37,14 +40,18 @@ class MainActivity : AppCompatActivity() {
         btnShareToOtherApps.setOnClickListener {
             val message: String = etUserMessage.text.toString()
             val intent = Intent()
-            intent.action = Intent.ACTION_SEND
-            intent.putExtra(Intent.EXTRA_TEXT, message)
-            intent.type = "text/plain"
+            //Intent allows communication with the system as well as other apps. For instance, to send mail, 
+            //I would not incorporate the entire mail functionality in my app, but call out to apps like Gmail to help me with the same.
+            intent.action = Intent.ACTION_SEND //What the intent does
+            intent.putExtra(Intent.EXTRA_TEXT, message) //Intent also displays a message
+            intent.type = "text/plain" //Type of message sent by intent
             startActivity(Intent.createChooser(intent, "Share to : "))
         }
-
+        
+        //setOnClickListener method gets activated when a button is clicked
         btnRecyclerViewDemo.setOnClickListener {
-
+            
+            //The HobbiesActivity, which is a class file, is called when the buttom is clicked
             val intent = Intent(this, HobbiesActivity::class.java)
 
             startActivity(intent)
